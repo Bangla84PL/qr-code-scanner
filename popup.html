@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Scanner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code Scanner</h1>
+
+    <div class="action-buttons">
+      <button id="scanButton" class="btn btn-primary">Scan Page for QR Codes</button>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Scanning page...</p>
+    </div>
+
+    <div id="results" class="results hidden">
+      <h2>Results</h2>
+      <div id="resultsList"></div>
+    </div>
+
+    <div id="noResults" class="no-results hidden">
+      <p>No QR codes found on this page.</p>
+    </div>
+
+    <div id="error" class="error hidden">
+      <p>Error scanning page. Please try again.</p>
+    </div>
+  </div>
+
+  <script src="jsQR.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
