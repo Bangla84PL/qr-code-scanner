@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - QR Code Scanner Extension</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      color: #0066cc;
+      border-bottom: 2px solid #0066cc;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #0052a3;
+      margin-top: 30px;
+    }
+    .highlight {
+      background-color: #f0f8ff;
+      padding: 15px;
+      border-left: 4px solid #0066cc;
+      margin: 20px 0;
+    }
+    ul {
+      margin: 10px 0;
+    }
+    li {
+      margin: 8px 0;
+    }
+    .last-updated {
+      color: #666;
+      font-style: italic;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy for QR Code Scanner</h1>
+
+  <div class="highlight">
+    <strong>TL;DR:</strong> This extension does not collect, store, or transmit any user data whatsoever.
+    All QR code scanning happens locally in your browser.
+  </div>
+
+  <h2>Data Collection</h2>
+  <p>
+    <strong>QR Code Scanner does NOT collect any user data.</strong> We do not:
+  </p>
+  <ul>
+    <li>Track your browsing history</li>
+    <li>Collect personal information</li>
+    <li>Store any data from scanned QR codes</li>
+    <li>Send any information to external servers</li>
+    <li>Use analytics or tracking tools</li>
+    <li>Share data with third parties</li>
+  </ul>
+
+  <h2>How the Extension Works</h2>
+  <p>When you use QR Code Scanner:</p>
+  <ul>
+    <li>The extension only activates when you click the extension icon and press the "Scan Page for QR Codes" button</li>
+    <li>It analyzes images and canvas elements on the current webpage</li>
+    <li>All processing happens locally in your browser using JavaScript</li>
+    <li>Decoded QR code data is displayed to you in the popup</li>
+    <li>No data is sent to any server or stored anywhere</li>
+    <li>When you close the popup, all scanned data is cleared from memory</li>
+  </ul>
+
+  <h2>Permissions Used</h2>
+  <p>The extension requests the following permissions, and here's why:</p>
+
+  <h3>activeTab Permission</h3>
+  <p>
+    This permission allows the extension to access the content of the current tab when you click the extension
+    icon and initiate a scan. This is necessary to read and analyze images on the page.
+  </p>
+
+  <h3>scripting Permission</h3>
+  <p>
+    This permission allows the extension to inject the content script that analyzes images and canvas elements
+    on the page to detect and decode QR codes.
+  </p>
+
+  <h3>Content Scripts on All URLs</h3>
+  <p>
+    The extension's content script is registered to work on all URLs because QR codes can appear on any website.
+    However, the script only performs actions when you explicitly click the scan button. It does not run
+    automatically in the background.
+  </p>
+
+  <h2>Third-Party Libraries</h2>
+  <p>
+    This extension uses the <strong>jsQR</strong> library (by cozmo) for QR code decoding. This library runs
+    entirely in your browser and does not communicate with any external servers.
+  </p>
+
+  <h2>Data Storage</h2>
+  <p>
+    The extension does not use any form of storage (localStorage, chrome.storage, cookies, etc.).
+    No data persists between sessions.
+  </p>
+
+  <h2>Changes to This Privacy Policy</h2>
+  <p>
+    If we make any changes to this privacy policy, we will update this page and the "Last Updated" date below.
+    Any changes that involve data collection will require an update to the extension, which you will need to
+    approve through the Chrome browser.
+  </p>
+
+  <h2>Open Source</h2>
+  <p>
+    This extension is open source. You can review the source code to verify our privacy claims at:
+    <br>
+    <a href="https://github.com/Bangla84PL/qr-code-scanner">https://github.com/Bangla84PL/qr-code-scanner</a>
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    If you have any questions about this privacy policy or the extension, please contact us through the
+    GitHub repository issues page.
+  </p>
+
+  <div class="last-updated">
+    <strong>Last Updated:</strong> November 11, 2025
+  </div>
+</body>
+</html>
