@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline';">
+  <title data-i18n="extensionName">QR Code Scanner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1 data-i18n="extensionName">QR Code Scanner</h1>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs" role="tablist" aria-label="Main navigation">
+      <button
+        class="tab active"
+        role="tab"
+        id="scanTab"
+        aria-selected="true"
+        aria-controls="scanPanel"
+        data-i18n="tabScan"
+      >
+        Scan
+      </button>
+      <button
+        class="tab"
+        role="tab"
+        id="historyTab"
+        aria-selected="false"
+        aria-controls="historyPanel"
+        data-i18n="tabHistory"
+      >
+        History
+      </button>
+      <button
+        class="tab"
+        role="tab"
+        id="settingsTab"
+        aria-selected="false"
+        aria-controls="settingsPanel"
+        data-i18n="tabSettings"
+      >
+        Settings
+      </button>
+    </nav>
+
+    <!-- Scan Panel -->
+    <section id="scanPanel" class="panel active" role="tabpanel" aria-labelledby="scanTab">
+      <div class="action-buttons">
+        <button
+          id="scanButton"
+          class="btn btn-primary"
+          aria-label="Scan current page for QR codes"
+          data-i18n="buttonScan"
+        >
+          Scan Page for QR Codes
+        </button>
+      </div>
+
+      <div id="loading" class="loading hidden" role="status" aria-live="polite">
+        <div class="spinner" aria-hidden="true"></div>
+        <p data-i18n="statusScanning">Scanning page...</p>
+      </div>
+
+      <div id="results" class="results hidden">
+        <h2 data-i18n="headingResults">Results</h2>
+        <div id="resultsList" role="list"></div>
+      </div>
+
+      <div id="noResults" class="no-results hidden" role="status">
+        <p data-i18n="messageNoResults">No QR codes found on this page.</p>
+      </div>
+
+      <div id="error" class="error hidden" role="alert">
+        <p data-i18n="messageError">Error scanning page. Please try again.</p>
+      </div>
+    </section>
+
+    <!-- History Panel -->
+    <section id="historyPanel" class="panel hidden" role="tabpanel" aria-labelledby="historyTab">
+      <div class="panel-header">
+        <h2 data-i18n="headingHistory">Scan History</h2>
+        <button
+          id="clearHistoryButton"
+          class="btn btn-secondary btn-small"
+          aria-label="Clear all history"
+          data-i18n="buttonClearHistory"
+        >
+          Clear All
+        </button>
+      </div>
+
+      <div id="historyList" class="history-list" role="list">
+        <p class="empty-state" data-i18n="messageNoHistory">No scan history yet.</p>
+      </div>
+    </section>
+
+    <!-- Settings Panel -->
+    <section id="settingsPanel" class="panel hidden" role="tabpanel" aria-labelledby="settingsTab">
+      <h2 data-i18n="headingSettings">Settings</h2>
+
+      <div class="settings-group">
+        <div class="setting-item">
+          <label for="autoCopyToggle">
+            <span data-i18n="settingAutoCopy">Auto-copy QR code data</span>
+            <input type="checkbox" id="autoCopyToggle" role="switch" aria-checked="false">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-item">
+          <label for="notificationsToggle">
+            <span data-i18n="settingNotifications">Show notifications</span>
+            <input type="checkbox" id="notificationsToggle" role="switch" aria-checked="true">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-item">
+          <label for="historyToggle">
+            <span data-i18n="settingHistory">Enable scan history</span>
+            <input type="checkbox" id="historyToggle" role="switch" aria-checked="true">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-item">
+          <label for="maxHistoryItems">
+            <span data-i18n="settingMaxHistory">Maximum history items</span>
+            <input
+              type="number"
+              id="maxHistoryItems"
+              min="10"
+              max="200"
+              value="50"
+              aria-label="Maximum number of history items"
+            >
+          </label>
+        </div>
+
+        <div class="setting-item">
+          <label for="themeSelect">
+            <span data-i18n="settingTheme">Theme</span>
+            <select id="themeSelect" aria-label="Select theme">
+              <option value="auto" data-i18n="themeAuto">Auto</option>
+              <option value="light" data-i18n="themeLight">Light</option>
+              <option value="dark" data-i18n="themeDark">Dark</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <button id="saveSettingsButton" class="btn btn-primary" data-i18n="buttonSaveSettings">
+        Save Settings
+      </button>
+
+      <div id="settingsSaved" class="success-message hidden" role="status">
+        <p data-i18n="messageSettingsSaved">Settings saved successfully!</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="version">v2.0.0</p>
+    </footer>
+  </div>
+
+  <script type="module" src="./popup.ts"></script>
+</body>
+</html>

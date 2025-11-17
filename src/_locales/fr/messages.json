@@ -1,0 +1,82 @@
+{
+  "extensionName": {
+    "message": "Scanner de Code QR",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Extraire des informations des codes QR visibles sur les sites Web",
+    "description": "Description of the extension"
+  },
+  "tabScan": {
+    "message": "Scanner",
+    "description": "Scan tab label"
+  },
+  "tabHistory": {
+    "message": "Historique",
+    "description": "History tab label"
+  },
+  "tabSettings": {
+    "message": "Paramètres",
+    "description": "Settings tab label"
+  },
+  "buttonScan": {
+    "message": "Scanner la Page pour les Codes QR",
+    "description": "Button to start scanning"
+  },
+  "buttonCopy": {
+    "message": "Copier",
+    "description": "Copy button label"
+  },
+  "buttonCopied": {
+    "message": "Copié!",
+    "description": "Copy success message"
+  },
+  "buttonOpenLink": {
+    "message": "Ouvrir le Lien",
+    "description": "Open URL button label"
+  },
+  "buttonClearHistory": {
+    "message": "Tout Effacer",
+    "description": "Clear history button"
+  },
+  "buttonSaveSettings": {
+    "message": "Enregistrer les Paramètres",
+    "description": "Save settings button"
+  },
+  "statusScanning": {
+    "message": "Analyse de la page...",
+    "description": "Scanning status message"
+  },
+  "headingResults": {
+    "message": "Résultats",
+    "description": "Results heading"
+  },
+  "messageNoResults": {
+    "message": "Aucun code QR trouvé sur cette page.",
+    "description": "No results message"
+  },
+  "settingAutoCopy": {
+    "message": "Copier automatiquement les données du code QR",
+    "description": "Auto-copy setting label"
+  },
+  "settingNotifications": {
+    "message": "Afficher les notifications",
+    "description": "Notifications setting label"
+  },
+  "settingTheme": {
+    "message": "Thème",
+    "description": "Theme setting label"
+  },
+  "themeAuto": {
+    "message": "Automatique",
+    "description": "Auto theme option"
+  },
+  "themeLight": {
+    "message": "Clair",
+    "description": "Light theme option"
+  },
+  "themeDark": {
+    "message": "Sombre",
+    "description": "Dark theme option"
+  }
+}

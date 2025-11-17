@@ -1,0 +1,114 @@
+{
+  "extensionName": {
+    "message": "Escáner de Códigos QR",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Extraer información de códigos QR visibles en sitios web",
+    "description": "Description of the extension"
+  },
+  "tabScan": {
+    "message": "Escanear",
+    "description": "Scan tab label"
+  },
+  "tabHistory": {
+    "message": "Historial",
+    "description": "History tab label"
+  },
+  "tabSettings": {
+    "message": "Configuración",
+    "description": "Settings tab label"
+  },
+  "buttonScan": {
+    "message": "Escanear Página en Busca de Códigos QR",
+    "description": "Button to start scanning"
+  },
+  "buttonCopy": {
+    "message": "Copiar",
+    "description": "Copy button label"
+  },
+  "buttonCopied": {
+    "message": "¡Copiado!",
+    "description": "Copy success message"
+  },
+  "buttonFailed": {
+    "message": "Fallido",
+    "description": "Copy failed message"
+  },
+  "buttonOpenLink": {
+    "message": "Abrir Enlace",
+    "description": "Open URL button label"
+  },
+  "buttonClearHistory": {
+    "message": "Borrar Todo",
+    "description": "Clear history button"
+  },
+  "buttonSaveSettings": {
+    "message": "Guardar Configuración",
+    "description": "Save settings button"
+  },
+  "statusScanning": {
+    "message": "Escaneando página...",
+    "description": "Scanning status message"
+  },
+  "headingResults": {
+    "message": "Resultados",
+    "description": "Results heading"
+  },
+  "headingHistory": {
+    "message": "Historial de Escaneos",
+    "description": "History heading"
+  },
+  "headingSettings": {
+    "message": "Configuración",
+    "description": "Settings heading"
+  },
+  "messageNoResults": {
+    "message": "No se encontraron códigos QR en esta página.",
+    "description": "No results message"
+  },
+  "messageError": {
+    "message": "Error al escanear la página. Por favor, inténtelo de nuevo.",
+    "description": "Error message"
+  },
+  "messageNoHistory": {
+    "message": "Aún no hay historial de escaneos.",
+    "description": "Empty history message"
+  },
+  "messageSettingsSaved": {
+    "message": "¡Configuración guardada con éxito!",
+    "description": "Settings saved message"
+  },
+  "settingAutoCopy": {
+    "message": "Copiar automáticamente datos del código QR",
+    "description": "Auto-copy setting label"
+  },
+  "settingNotifications": {
+    "message": "Mostrar notificaciones",
+    "description": "Notifications setting label"
+  },
+  "settingHistory": {
+    "message": "Habilitar historial de escaneos",
+    "description": "History setting label"
+  },
+  "settingMaxHistory": {
+    "message": "Máximo de elementos en historial",
+    "description": "Max history setting label"
+  },
+  "settingTheme": {
+    "message": "Tema",
+    "description": "Theme setting label"
+  },
+  "themeAuto": {
+    "message": "Automático",
+    "description": "Auto theme option"
+  },
+  "themeLight": {
+    "message": "Claro",
+    "description": "Light theme option"
+  },
+  "themeDark": {
+    "message": "Oscuro",
+    "description": "Dark theme option"
+  }
+}

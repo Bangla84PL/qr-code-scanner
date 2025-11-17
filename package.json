@@ -2,10 +2,17 @@
   "name": "qr-code-scanner",
   "version": "1.0.0",
   "description": "Chrome extension to extract information from QR codes visible on websites",
-  "main": "content.js",
+  "type": "module",
   "scripts": {
-    "package": "node package-extension.js",
-    "generate-icons": "node create-icons.js"
+    "dev": "vite build --watch --mode development",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "type-check": "tsc --noEmit",
+    "package": "npm run build && node scripts/package-extension.js",
+    "generate-icons": "node scripts/create-icons.js"
   },
   "repository": {
     "type": "git",
@@ -16,11 +23,27 @@
     "qr-scanner",
     "chrome-extension",
     "barcode",
-    "qr-reader"
+    "qr-reader",
+    "manifest-v3"
   ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jsqr": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "terser": "^5.44.1",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1",
+    "vite-plugin-static-copy": "^1.0.6"
   }
 }

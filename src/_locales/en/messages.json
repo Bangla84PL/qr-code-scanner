@@ -1,0 +1,162 @@
+{
+  "extensionName": {
+    "message": "QR Code Scanner",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Extract information from QR codes visible on websites",
+    "description": "Description of the extension"
+  },
+  "tabScan": {
+    "message": "Scan",
+    "description": "Scan tab label"
+  },
+  "tabHistory": {
+    "message": "History",
+    "description": "History tab label"
+  },
+  "tabSettings": {
+    "message": "Settings",
+    "description": "Settings tab label"
+  },
+  "buttonScan": {
+    "message": "Scan Page for QR Codes",
+    "description": "Button to start scanning"
+  },
+  "buttonCopy": {
+    "message": "Copy",
+    "description": "Copy button label"
+  },
+  "buttonCopied": {
+    "message": "Copied!",
+    "description": "Copy success message"
+  },
+  "buttonFailed": {
+    "message": "Failed",
+    "description": "Copy failed message"
+  },
+  "buttonOpenLink": {
+    "message": "Open Link",
+    "description": "Open URL button label"
+  },
+  "buttonClearHistory": {
+    "message": "Clear All",
+    "description": "Clear history button"
+  },
+  "buttonSaveSettings": {
+    "message": "Save Settings",
+    "description": "Save settings button"
+  },
+  "statusScanning": {
+    "message": "Scanning page...",
+    "description": "Scanning status message"
+  },
+  "headingResults": {
+    "message": "Results",
+    "description": "Results heading"
+  },
+  "headingHistory": {
+    "message": "Scan History",
+    "description": "History heading"
+  },
+  "headingSettings": {
+    "message": "Settings",
+    "description": "Settings heading"
+  },
+  "messageNoResults": {
+    "message": "No QR codes found on this page.",
+    "description": "No results message"
+  },
+  "messageError": {
+    "message": "Error scanning page. Please try again.",
+    "description": "Error message"
+  },
+  "messageNoHistory": {
+    "message": "No scan history yet.",
+    "description": "Empty history message"
+  },
+  "messageSettingsSaved": {
+    "message": "Settings saved successfully!",
+    "description": "Settings saved message"
+  },
+  "errorNoTab": {
+    "message": "Unable to access current tab",
+    "description": "No tab error"
+  },
+  "errorPermission": {
+    "message": "Unable to scan this page. The extension may not have permission.",
+    "description": "Permission error"
+  },
+  "errorGeneric": {
+    "message": "An error occurred while scanning.",
+    "description": "Generic error"
+  },
+  "labelData": {
+    "message": "Data: ",
+    "description": "Data label"
+  },
+  "qrCodeNumber": {
+    "message": "QR Code #{number}",
+    "description": "QR code number label"
+  },
+  "sourceImage": {
+    "message": "Source: Image ({alt})",
+    "description": "Image source label"
+  },
+  "sourceCanvas": {
+    "message": "Source: Canvas ({id})",
+    "description": "Canvas source label"
+  },
+  "confirmClearHistory": {
+    "message": "Are you sure you want to clear all history?",
+    "description": "Clear history confirmation"
+  },
+  "settingAutoCopy": {
+    "message": "Auto-copy QR code data",
+    "description": "Auto-copy setting label"
+  },
+  "settingNotifications": {
+    "message": "Show notifications",
+    "description": "Notifications setting label"
+  },
+  "settingHistory": {
+    "message": "Enable scan history",
+    "description": "History setting label"
+  },
+  "settingMaxHistory": {
+    "message": "Maximum history items",
+    "description": "Max history setting label"
+  },
+  "settingTheme": {
+    "message": "Theme",
+    "description": "Theme setting label"
+  },
+  "themeAuto": {
+    "message": "Auto",
+    "description": "Auto theme option"
+  },
+  "themeLight": {
+    "message": "Light",
+    "description": "Light theme option"
+  },
+  "themeDark": {
+    "message": "Dark",
+    "description": "Dark theme option"
+  },
+  "timeJustNow": {
+    "message": "Just now",
+    "description": "Time: just now"
+  },
+  "timeMinutesAgo": {
+    "message": "$1 minutes ago",
+    "description": "Time: minutes ago"
+  },
+  "timeHoursAgo": {
+    "message": "$1 hours ago",
+    "description": "Time: hours ago"
+  },
+  "timeDaysAgo": {
+    "message": "$1 days ago",
+    "description": "Time: days ago"
+  }
+}
